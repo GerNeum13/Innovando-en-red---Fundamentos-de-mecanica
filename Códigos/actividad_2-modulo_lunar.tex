@@ -1,0 +1,65 @@
+\documentclass[11pt]{exam}
+\usepackage[activeacute,spanish]{babel} % Permite el idioma espa\~nol.
+\usepackage[utf8]{inputenc} 
+\usepackage{amsmath}
+\usepackage[colorlinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[amssymb]{SIunits}
+\pagestyle{headandfoot}
+\spanishdecimal{.}
+
+\begin{document}
+\sffamily
+
+\firstpageheadrule
+%\firstpagefootrule
+\firstpagefooter{}{Pagina \thepage\ de \numpages}{}
+\runningheadrule
+%\runningfootrule
+%\lhead{\bf\normalsize  Relatividad General\\ Tarea 01, 2022-1}
+%\rhead{\bf\normalsize Ciencias F\'isicas \\ Astronomía}
+\chead{\bf\normalsize Depto. de F\'isica \\ Universidad de Concepci\'on}
+\rfoot{\thepage\ / \numpages}
+\cfoot{ }
+\lfoot{\tiny }
+\begin{flushleft}
+\vspace{0.2in}
+%\hbox to \textwidth{Nombre: \enspace \hrulefill}
+%Nombre : \\
+\vspace{0.25cm}
+\end{flushleft}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\textbf{Actividad 2: Módulo lunar}
+\end{center}
+
+La siguente actividad está diseñada para mostrar la segunda ley de Newton en acción, con el ejemplo de un cuerpo en movimiento en 1D bajo la acción de la gravedad, y frenado por la resistencia del aire. \\
+
+Al final de esta actividad, el/la estudiante será capaz de: graficar datos de aceleración versus tiempo, obtener valores de fuerza a partir de valores de aceleración, calcular valores de fuerza de roce versus tiempo.\\
+
+Conceptos clave: Segunda ley de Newton; fuerza de gravedad; Fuerza de roce.\\
+
+\begin{questions}
+\item Queremos modelar el movimiento de un módulo lunar que reingresa a la atmósfera. Este movimiento es afectado por la fuerza de gravedad sobre el módulo, $\vec{F}_g$, y la fuerza de resistencia provocada por el aire durante la caída, $\vec{F}_r$ (ver Figura \ref{dcl}). La masa del módulo es de 5000 kg. En el archivo de datos modulo.txt se listan los valores de aceleración $a(t_i)$ para distintos tiempos $t_i$, para dicho módulo. Con estos datos, realice las siguientes tareas:
+
+\begin{parts}
+\item  Grafique los datos de aceleración v/s tiempo.
+%\item Grafique la velocidad.
+\item Escriba la segunda ley de Newton para esta situación y despeje la resistencia del aire.
+\item  Grafique los valores de la resistencia del aire en función del tiempo.
+\item El módulo puede dañarse si se expone a fuerzas de resistencia del aire mayores a $10^6$ N por más de 5 segundos. Basado en el resultado del punto anterior, ¿qué pasará con el módulo? Justifique.
+\end{parts}
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.26\textwidth]{dcl_modulo.png}    
+    \caption{Diagrama de cuerpo libre del módulo.}
+    \label{dcl}
+\end{figure}
+  
+\end{center}
+
+
+\end{questions}
+
+\end{document} 
